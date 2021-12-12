@@ -42,7 +42,7 @@ function setTime() {
         timeInfo.text("Vanaf 10:00");
       }
     }
-  } else if (!normaletijden) {
+  } else if (!(normaletijden)) {
     // openTag.addClass("closed");
     // openTag.removeClass("open");
     timeValue.text(customtagtext);
