@@ -1,4 +1,4 @@
-var open = false;
+var normaletijden = false;
 var customtagtext = "Zondag opening";
 var customtaginfo = "Vanaf 12:00";
 var greentag = true;
@@ -23,7 +23,7 @@ var timeValue = $(".time-tag-value");
 var timeInfo = $(".time-info");
 
 function setTime() {
-  if (open) {
+  if (normaletijden) {
     if (hourofday >= 8 && hourofday <= 16) {
       openTag.removeClass("closed");
       openTag.addClass("open");
@@ -42,7 +42,7 @@ function setTime() {
         timeInfo.text("Vanaf 10:00");
       }
     }
-  } else if (!open) {
+  } else if (!normaletijden) {
     // openTag.addClass("closed");
     // openTag.removeClass("open");
     timeValue.text(customtagtext);
