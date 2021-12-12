@@ -1,4 +1,4 @@
-var normaletijden = false;
+var normaletijden = true;
 var customtagtext = "Zondag opening";
 var customtaginfo = "Vanaf 12:00";
 var greentag = true;
