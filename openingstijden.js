@@ -28,7 +28,7 @@ function setTime() {
       openTag.removeClass("closed");
       openTag.addClass("open");
       timeValue.text("Nu open");
-      timeInfo.text("Tot 17:00");
+      timeInfo.text("Tot 18:00");
     } else if (!(hourofday >= 8 && hourofday <= 16)) {
       if (dayofweek === "Zaterdag") {
         openTag.addClass("closed");
