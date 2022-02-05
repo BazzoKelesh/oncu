@@ -14,7 +14,6 @@ var dagen = [
 ];
 
 var date = new Date();
-date.setDate(6);
 var hourofday = date.getUTCHours();
 var dayofweekindex = date.getDay();
 var dayofweek = dagen[dayofweekindex - 1];
