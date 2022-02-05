@@ -29,6 +29,12 @@ function setTime() {
       openTag.addClass("open");
       timeValue.text("Nu open");
       timeInfo.text("Tot 18:00");
+      if (dayofweek === 'Donderdag') {
+        openTag.removeClass("closed");
+        openTag.addClass("open");
+        timeValue.text("Nu open");
+        timeInfo.text("Tot 21:00");
+      }
     } else if (!(hourofday >= 8 && hourofday <= 16)) {
       if (dayofweek === "Zaterdag") {
         openTag.addClass("closed");
@@ -40,6 +46,12 @@ function setTime() {
         openTag.removeClass("open");
         timeValue.text(`${dagen[dayofweekindex]} open`);
         timeInfo.text("Vanaf 10:00");
+          if (dayofweek === "Zondag") {
+          openTag.addClass("closed");
+          openTag.removeClass("open");
+          timeValue.text("Maandag open");
+          timeInfo.text("Vanaf 13:00");
+        }
       }
     }
   } else if (!(normaletijden)) {
